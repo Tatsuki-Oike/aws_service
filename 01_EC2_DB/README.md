@@ -21,7 +21,7 @@ sudo systemctl enable mariadb
 ```sh
 export MYSQL_HOST='localhost'
 export MYSQL_USER='root'
-export MYSQL_PASSWORD='your_root_password'
+export MYSQL_PASSWORD='your_password'
 export MYSQL_DATABASE='your_database'
 ```
 
