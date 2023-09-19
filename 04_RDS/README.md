@@ -50,7 +50,7 @@ exit
 ```sh
 sudo yum install -y git
 git --version
-git clone ~~
+git clone https://github.com/Tatsuki-Oike/aws_service.git
 cd ./aws_service/04_RDS
 ```
 
