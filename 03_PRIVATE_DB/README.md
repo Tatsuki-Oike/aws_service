@@ -78,7 +78,7 @@ sudo dnf install -y mariadb105-server
 ##  2.2 環境変数
 
 <br>
-MYSQL_HOST = DBサーバーのパブリックIP
+MYSQL_HOST = DBサーバーのプライベートIP
 
 ```sh
 export MYSQL_HOST='X.X.X.X'
