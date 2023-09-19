@@ -1,6 +1,6 @@
 <template>
 
-  <h3 class="mt-5"> Home ~ RDBの内容 ~ </h3>
+  <h3 class="mt-5"> Home ~ RDSの内容 ~ </h3>
   <div>
     <h3 class="mt-5"> Images </h3>
     <table class="table">

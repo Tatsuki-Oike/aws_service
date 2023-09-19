@@ -81,7 +81,7 @@ npm run build # buildファイルを作成する
 
 <br>
 
-# 2 RDB 接続
+# 2 RDS 接続
 
 ## 2.1 MariaDB Install
 

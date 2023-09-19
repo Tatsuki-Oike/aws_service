@@ -1,6 +1,6 @@
 <template>
 
-    <h3 class="mt-5"> Delete ~ S3のファイル消去 + RDBのデータ消去 ~ </h3>
+    <h3 class="mt-5"> Delete ~ S3のファイル消去 + RDSのデータ消去 ~ </h3>
 
     <!-- 画像のID入力 -->
     <div class="row g-3 align-items-center">

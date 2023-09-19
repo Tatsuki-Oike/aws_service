@@ -1,6 +1,6 @@
 <template>
     
-    <h3 class="mt-5"> Upload ~ S3にファイルアップロード + RDBにデータ追加 ~</h3>
+    <h3 class="mt-5"> Upload ~ S3にファイルアップロード + RDSにデータ追加 ~</h3>
 
     <!-- ファイル名入力 -->
     <div class="row g-3 align-items-center my-3">

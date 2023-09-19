@@ -13,7 +13,7 @@
 
 <br>
 
-# 1 RDB 接続
+# 1 RDS 接続
 
 ## 1.1 MariaDB Install
 
