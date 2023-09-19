@@ -42,16 +42,12 @@ sudo systemctl enable mariadb
 
 ## 1.2 データベース設定
 
-<br>
-データベースに入る
-
 ```sh
 sudo mysqladmin -u root password your_root_password
 mysql -u root -p
 ```
 
 <br>
-WEBサーバーに権限付与 <br>
 X.X.X.X = WEBサーバーのプライベートIP
 
 ```sh
@@ -63,9 +59,6 @@ FLUSH PRIVILEGES;
 SELECT user, host FROM mysql.user;
 exit
 ```
-
-<br>
-データベース再起動
 
 ```sh
 sudo systemctl restart mariadb
@@ -84,7 +77,8 @@ sudo dnf install -y mariadb105-server
 
 ##  2.2 環境変数
 
-* MYSQL_HOST = DBサーバーのパブリックIP
+<br>
+MYSQL_HOST = DBサーバーのパブリックIP
 
 ```sh
 export MYSQL_HOST='X.X.X.X'
