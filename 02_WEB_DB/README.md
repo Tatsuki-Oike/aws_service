@@ -42,8 +42,7 @@ sudo mysqladmin -u root password your_password
 mysql -u root -p
 ```
 
-* GRANT WEB PUBLIC
-
+<br>
 X.X.X.X = WEBサーバーのパブリックIP
 
 ```sh
@@ -73,7 +72,8 @@ sudo dnf install -y mariadb105-server
 
 ##  2.2 環境変数
 
-* MYSQL_HOST = DBサーバーのパブリックIP
+<br>
+MYSQL_HOST = DBサーバーのパブリックIP
 
 ```sh
 export MYSQL_HOST='X.X.X.X'
