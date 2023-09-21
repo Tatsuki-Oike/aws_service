@@ -105,7 +105,7 @@ exit
 sudo yum install -y git
 git --version
 git clone https://github.com/Tatsuki-Oike/aws_service.git
-cd ./aws_service/02_WEB_DB
+cd ./aws_service/03_PRIVATE_DB
 ```
 
 ## 3.2 Pythonの仮想環境構築
