@@ -20,7 +20,7 @@ Host webssh
     IdentityFile ~/.ssh/X.pem # キーファイルのパス
 
 Host dbssh
-    HostName X.X.X.X # (DBサーバ-のパブリックIP)
+    HostName X.X.X.X # (DBサーバ-のプライベートIP)
     User ec2-user
     Port 22
     IdentityFile ~/.ssh/X.pem # キーファイルのパス
