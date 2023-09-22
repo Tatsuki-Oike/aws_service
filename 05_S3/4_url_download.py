@@ -32,4 +32,4 @@ if response.status_code == 200:
     print("Done")
 else:
     # ダウンロードが失敗した場合
-    print(f"ダウンロードに失敗しました。HTTPステータスコード: {response.status_code}")
+    print(f"ERROR: {response.status_code}")
