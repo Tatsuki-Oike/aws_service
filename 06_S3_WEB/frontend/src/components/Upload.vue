@@ -50,7 +50,7 @@ export default {
                 )
                 
                 // ファイルのアップロード
-                axios.put(presigned_url, this.selectedFile, {
+                await axios.put(presigned_url, this.selectedFile, {
                     headers: {
                     'Content-Type': this.selectedFile.type,
                     },
