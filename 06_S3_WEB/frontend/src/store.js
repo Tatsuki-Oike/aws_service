@@ -23,6 +23,7 @@ export const store = createStore({
                 params: QUERY_DATA
               });
               const parsedResponse = JSON.parse(response.data);
+              console.log(parsedResponse)
               const presigned_url = parsedResponse.presigned_url;
         
               return presigned_url;

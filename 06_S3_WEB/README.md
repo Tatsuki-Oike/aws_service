@@ -119,7 +119,7 @@ sudo cp -r dist/* /var/www/html
 # 3 Backend
 
 ```sh
-export MY_BUCKET_NAME='bucket-name'
+export MY_BUCKET_NAME='ec2-web-s3-bucket'
 ```
 
 ```sh
