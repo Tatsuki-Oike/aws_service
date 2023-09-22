@@ -30,28 +30,6 @@ Cross-Origin Resource Sharing (CORS)
 ```
 
 <br>
-インラインポリシー
-
-```js
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject",
-                "s3:ListBucket"
-            ],
-            "Resource": [
-                "arn:aws:s3:::your-bucket",
-                "arn:aws:s3:::your-bucket/*"
-            ]
-        }
-    ]
-}
-```
-
-<br>
 
 # 1 ローカルでフロントエンド開発
 
@@ -106,20 +84,12 @@ npm install
 npm run build
 ```
 
-## 2.3 WEBサーバー
-
-```sh
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo cp -r dist/* /var/www/html
-```
-
 <br>
 
 # 3 Backend
 
 ```sh
-export MY_BUCKET_NAME='ec2-web-s3-bucket'
+export MY_BUCKET_NAME='bucket-name'
 ```
 
 ```sh

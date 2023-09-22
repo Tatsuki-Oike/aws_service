@@ -28,6 +28,7 @@ export const store = createStore({
         
               return presigned_url;
             } catch (error) {
+              console.log(error)
               throw new Error("Presigned URLの取得に失敗しました");
             }
         }

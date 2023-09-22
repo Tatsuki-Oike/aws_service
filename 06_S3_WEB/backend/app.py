@@ -16,7 +16,7 @@ CORS(app)
 # S3バケットの情報
 s3 = boto3.client(
     's3', 
-    region_name='ap-northeast-1',
+    region_name='us-east-1',
     config=Config(signature_version="s3v4")
     )
 bucket_name = os.getenv('MY_BUCKET_NAME')
