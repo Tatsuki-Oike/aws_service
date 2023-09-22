@@ -33,6 +33,9 @@ Cross-Origin Resource Sharing (CORS)
 
 # 1 ローカルでフロントエンド開発
 
+https://nodejs.org/en/download
+
+
 ```sh
 npm install -g @vue/cli
 ```
@@ -78,6 +81,8 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 sudo cp -r dist/* /var/www/html
 ```
+
+<br>
 
 # 3 Backend
 
