@@ -22,7 +22,7 @@ presigned_url = s3.generate_presigned_url(
     ExpiresIn=60  # 有効期限（秒単位）を設定
 )
 
-# Presigned URLでデータ取得
+# Presigned URLでファイルのダウンロード
 response = requests.get(presigned_url)
 
 if response.status_code == 200:
