@@ -38,18 +38,14 @@ npm install -g @vue/cli
 ```
 
 ```sh
-cd ./aws_service/06_S3_WEB # 現在のディレクトリ移動
-npm init vite-app frontend # プロジェクト(フォルダ)作成
-cd frontend # 現在のディレクトリ移動
+cd ./aws_service/06_S3_WEB
+npm init vite-app frontend
+cd frontend
 npm install
 npm install axios
 npm install vue-router
 npm install vuex
-npm run dev # サーバー立てる
-```
-
-```sh
-npm run build # buildファイルを作成する
+npm run dev
 ```
 
 <br>
@@ -65,7 +61,17 @@ git clone https://github.com/Tatsuki-Oike/aws_service.git
 cd ./aws_service/06_S3_WEB/frontend
 ```
 
-## 2.2 WEBサーバー
+## 2.2 build
+
+```sh
+npm install
+npm install axios
+npm install vue-router
+npm install vuex
+npm run build
+```
+
+## 2.3 WEBサーバー
 
 ```sh
 sudo yum install httpd -y
@@ -86,7 +92,6 @@ source venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 install -r requirements.txt
 sudo venv/bin/python app.py
-python3 test.py
 ```
 
 <br>
