@@ -29,6 +29,7 @@ if response.status_code == 200:
     # ダウンロードが成功した場合
     with open(download_file, 'wb') as f:
         f.write(response.content)
+    print("Done")
 else:
     # ダウンロードが失敗した場合
     print(f"ダウンロードに失敗しました。HTTPステータスコード: {response.status_code}")

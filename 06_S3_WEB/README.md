@@ -68,9 +68,9 @@ cd ./aws_service/06_S3_WEB/frontend
 ## 2.2 WEBサーバー
 
 ```sh
-sudo yum install httpd -y # Apache Install
-sudo systemctl start httpd # Apache 起動
-sudo cp -r dist/* /var/www/html # WEBアプリフォルダ移動
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo cp -r dist/* /var/www/html
 ```
 
 # 3 Backend
@@ -81,10 +81,10 @@ export MY_BUCKET_NAME='bucket-name'
 
 ```sh
 cd ../backend
-python3 -m venv venv # 仮想環境作成
-source venv/bin/activate # 環境の中にはいる
-python3 -m pip install --upgrade pip # pip upgrade
-pip3 install -r requirements.txt # ライブラリインストール
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install --upgrade pip
+pip3 install -r requirements.txt
 sudo venv/bin/python app.py
 python3 test.py
 ```
