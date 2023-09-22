@@ -28,4 +28,4 @@ response = requests.delete(presigned_url)
 if response.status_code == 204:
     print("Done")
 else:
-    print(f"ファイルの消去に失敗しました。HTTPステータスコード: {response.status_code}")
+    print(f"ERROR: {response.status_code}")
