@@ -4,7 +4,7 @@
 * Cross-Origin Resource Sharing (CORS)
 * IAMロール作成
 * EC2作成
-  * セキュリティグループ (22, 80, 5000)
+  * セキュリティグループ (22, 80)
 
 <br>
 Cross-Origin Resource Sharing (CORS)
