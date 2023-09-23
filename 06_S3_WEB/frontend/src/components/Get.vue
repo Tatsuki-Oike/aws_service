@@ -36,7 +36,6 @@
     data() {
       return {
         file_name: "",
-        imageSrc: '',
         presigned_url: '',
       }
     },

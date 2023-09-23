@@ -31,20 +31,17 @@
     },
     methods: {
       async deleteFileContent() {
-        
-        const presigned_url = await this.$store.dispatch('getPresigned', 
-            { object_key: this.file_name, request_type: 'delete_object' }
-        )
-        
-        axios
-          .delete(presigned_url)
-          .then(response => {
-            console.log(response.data);
-            console.log("SUCCESS");
-          })
-          .catch(error => {
-            console.error("FAIL: ", error);
-          });
+        try {
+          
+          const presigned_url = await this.$store.dispatch('getPresigned', 
+              { object_key: this.file_name, request_type: 'delete_object' }
+          )
+
+          await axios.delete(presigned_url)
+          console.log("SUCCESS");
+        } catch (error) {
+          console.error("FAIL: ", error);
+        }
       },
       
     },

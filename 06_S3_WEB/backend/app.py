@@ -15,9 +15,10 @@ CORS(app)
 
 # S3バケットの情報
 s3 = boto3.client(
-    's3', 
-    region_name='us-east-1',
-    config=Config(signature_version="s3v4")
+    's3',  
+    region_name='ap-northeast-1',
+    endpoint_url='https://s3-ap-northeast-1.amazonaws.com',
+    config=Config(signature_version="s3v4"),
     )
 bucket_name = os.getenv('MY_BUCKET_NAME')
 
@@ -53,16 +54,12 @@ class S3Presigned(Resource):
 
             # Presigned URLの生成
             presigned_url = s3.generate_presigned_url(
-                str(request_type),
+                ClientMethod=str(request_type),
                 Params={'Bucket': bucket_name, 'Key': object_key},
-                ExpiresIn=600  # 有効期限（秒単位）を設定
+                ExpiresIn=600,  # 有効期限（秒単位）を設定
             )
 
-            response = {
-                "bucket_name": bucket_name,
-                "object_key": object_key,
-                "presigned_url": str(presigned_url)
-                }
+            response = {"presigned_url": str(presigned_url)}
         except Exception as e:
             response = {"error": str(e)}
         return json.dumps(response)
