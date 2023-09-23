@@ -14,7 +14,7 @@
     
     <!-- presigned url 取得ボタン -->
     <div class="d-grid gap-2 mt-2">
-            <button @click="getFileContent" class="btn btn-primary btn-block py-1"> Get Text File </button>
+            <button @click="getFileContent" class="btn btn-primary btn-block py-1"> Get Image File </button>
     </div>
 
     <!-- 内容表示 -->

@@ -14,7 +14,7 @@
     
     <!-- 消去ボタン -->
     <div class="d-grid gap-2 mt-2">
-      <button @click="deleteFileContent" class="btn btn-primary btn-block py-1">Delete Text File</button>
+      <button @click="deleteFileContent" class="btn btn-primary btn-block py-1">Delete Image File</button>
     </div>
 
   </template>
