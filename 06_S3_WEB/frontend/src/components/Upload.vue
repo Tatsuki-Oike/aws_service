@@ -52,8 +52,7 @@ export default {
                 // ファイルのアップロード
                 await axios.put(presigned_url, this.selectedFile, {
                     headers: {
-                    'Content-Type': this.selectedFile.type,
-                    'x-amz-acl': 'private', // 適切なACL設定
+                        'Content-Type': this.selectedFile.type,
                     },
                 });
                 
