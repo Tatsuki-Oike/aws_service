@@ -147,6 +147,10 @@ npm run build
 # 4 Backend
 
 ```sh
+export MY_BUCKET_NAME='bucket-name'
+```
+
+```sh
 cd ../backend
 python3 -m venv venv
 source venv/bin/activate
