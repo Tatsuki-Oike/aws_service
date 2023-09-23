@@ -89,7 +89,7 @@ npm run build
 # 3 Backend
 
 ```sh
-export MY_BUCKET_NAME='bucket-name'
+export MY_BUCKET_NAME='sample-us-east-bucket'
 ```
 
 ```sh
