@@ -13,10 +13,10 @@ Cross-Origin Resource Sharing (CORS)
 [
     {
         "AllowedHeaders": ["*"],
-        "AllowedMethods": ["GET", "PUT", "DELETE"],  // 必要なHTTPメソッドに応じて設定
-        "AllowedOrigins": ["*"],  // ドメインを適切な値に設定
+        "AllowedMethods": ["GET", "PUT", "DELETE"],
+        "AllowedOrigins": ["*"],
         "ExposeHeaders": [],
-        "MaxAgeSeconds": 3000  // プリフライトリクエストのキャッシュ時間を設定
+        "MaxAgeSeconds": 3000 
     }
 ]
 ```
