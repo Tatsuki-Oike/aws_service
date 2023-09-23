@@ -65,7 +65,7 @@ nvm install --lts
 node -v
 ```
 
-## 2.2 build
+## 2.3 build
 
 ```sh
 npm cache clean --force
