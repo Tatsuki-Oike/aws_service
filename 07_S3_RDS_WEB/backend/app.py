@@ -116,7 +116,7 @@ class S3RDS(Resource):
             response = {"error": str(e)}
         return json.dumps(response)
 
-api.add_resource(S3RDS, '/')
+api.add_resource(S3RDS, '/api')
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
